@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>TechNeriumServletV2Project</display-name>
+	<welcome-file-list>
+		<welcome-file>NewFile.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>fileServlet</servlet-name>
+		<servlet-class>servlet.FileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>fileServlet</servlet-name>
+		<url-pattern>/fileServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>outputServlet</servlet-name>
+		<servlet-class>servlet.OutputServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>outputServlet</servlet-name>
+		<url-pattern>/outputServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>outputPageServlet</servlet-name>
+		<servlet-class>servlet.OutputPageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>outputPageServlet</servlet-name>
+		<url-pattern>/outputPageServlet</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
